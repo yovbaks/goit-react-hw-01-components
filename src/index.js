@@ -4,7 +4,7 @@ import { App } from 'components/App';
 import './index.css';
 
 
-// ReactDOM.render(profile, document.querySelector('#root'));
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
