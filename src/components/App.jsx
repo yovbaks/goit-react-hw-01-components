@@ -1,7 +1,7 @@
-import Profile from './Profile';
-import StatisticList from './StatisticList'
-import user from '../user.json';
-import data from '../data.json';
+import Profile from './Profile/Profile';
+import StatisticList from './Statistics/StatisticList'
+import user from '../components/Profile/user.json';
+import data from '../components/Statistics/data.json';
 
 export const App = () => {
   return (
@@ -22,13 +22,9 @@ export const App = () => {
         avatar={user.avatar}
         stats={user.stats}
       />
-      {/* {data.map(item => (
-        <Statistics
-          
-          stats={data} />
-      ))} */}
+      
 
-      <StatisticList items={data} />
+      <StatisticList title="Upload stats" items={data} />
     </div>
   );
 };
