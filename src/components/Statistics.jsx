@@ -16,7 +16,7 @@ export default function Statistics({ title, label,percentage }) {
   );
 }
 
-// Statistics.propTypes = {
-//   title: PropTypes.string,
-//   stats: PropTypes.arrayOf(Object),
-// };
+Statistics.propTypes = {
+  title: PropTypes.string,
+  stats: PropTypes.arrayOf(Object),
+};
