@@ -3,12 +3,12 @@ import Statistics from './Statistics';
 
 function StatisticList({ title, items }) {
   return (
-    <section class="statistics">
-      {title && <h2 class="title">{title}</h2>}
+    <section className="statistics">
+      {title && <h2 className="title">{title}</h2>}
 
-      <ul class="stat-list">
+      <ul className="stat-list">
         {items.map(item => (
-          <li class="item" key={item.id}>
+          <li className="item" key={item.id}>
             <Statistics label={item.label} percentage={item.percentage} />
           </li>
         ))}
