@@ -1,5 +1,5 @@
-import Profile from './Profile/Profile';
-import StatisticList from './Statistics/StatisticList'
+import Profile from './Profile';
+import StatisticList from './Statistics'
 import FriendList from './FriendList';
 import TransactionHistory from './TransactionHistory';
 import user from '../components/Profile/user.json';
@@ -14,6 +14,7 @@ export const App = () => {
       style={{
         height: '100vh',
         display: 'flex',
+        flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
         fontSize: 40,
@@ -30,8 +31,8 @@ export const App = () => {
       
 
       <StatisticList title="Upload stats" items={data} />
-      <FriendList items={friends} />;
-      <TransactionHistory items={transactions} />;
+      <FriendList items={friends} />
+      <TransactionHistory items={transactions} />
 
     </div>
   );

@@ -1,12 +1,14 @@
-import propTypes from 'prop-types'
-
+import propTypes from 'prop-types';
+import css from './TransactionItem.module.css'
 
 const TransactionItem = ({ item }) => (
-    <tr>
+ 
+    <tr className={css.line}>
       <td>{item.type}</td>
       <td>{item.amount}</td>
       <td>{item.currency}</td>
     </tr>
+
 );
 
 TransactionItem.propTypes = {
@@ -15,9 +17,6 @@ TransactionItem.propTypes = {
     amount: propTypes.number.isRequired,
     currency: propTypes.string.isRequired,
   }),
-}
-
-
-
+};
 
 export default TransactionItem;

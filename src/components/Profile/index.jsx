@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 
-export default function Profile({ avatar, username, tag, location, stats }) {
+
+const  Profile=({ avatar, username, tag, location, stats })=>{
   return (
     <div className="profile">
       <div className="description">
@@ -28,10 +29,12 @@ export default function Profile({ avatar, username, tag, location, stats }) {
   )
 }
 
+export default Profile;
+
 Profile.propTypes = {
   avatar: PropTypes.string,
   username: PropTypes.string,
   tag: PropTypes.string,
   location: PropTypes.string,
-  stats: PropTypes.number,
+  stats: PropTypes.object.isRequired,
 }
