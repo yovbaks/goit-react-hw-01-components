@@ -15,7 +15,7 @@ export const App = () => {
         height: '100vh',
         display: 'flex',
         flexDirection: 'column',
-        justifyContent: 'center',
+       
         alignItems: 'center',
         fontSize: 40,
         color: '#010101',
@@ -31,6 +31,7 @@ export const App = () => {
       
 
       <StatisticList title="Upload stats" items={data} />
+       <StatisticList items={data} />
       <FriendList items={friends} />
       <TransactionHistory items={transactions} />
 
